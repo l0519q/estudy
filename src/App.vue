@@ -41,6 +41,7 @@
                 <a
                     href="http://vipgit.chanke.xyz/"
                     target="_blank"
+                    class="home"
                 >
                     <a-button icon="home">代码仓库</a-button>
                 </a>
@@ -254,9 +255,13 @@ export default {
 @media screen and (max-width: 576px) {
     .header {
         padding: 0 15px;
-        h2,
-        h5 {
+        h4,
+        h5,
+        .home {
             display: none;
+        }
+        h2 {
+            font-size: 18px;
         }
     }
     .right > a {
@@ -265,6 +270,9 @@ export default {
     .ant-btn {
         height: 24px;
         padding: 0 7px;
+    }
+    .ant-form {
+        width: 90%;
     }
 }
 </style>
